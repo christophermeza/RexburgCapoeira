@@ -1,0 +1,168 @@
+<html>
+
+<head>
+  <title>My Cart</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+  .badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    right: 10px;
+  }
+  .my-cart-icon-affix {
+    position: fixed;
+    z-index: 999;
+  }
+  </style>
+</head>
+
+<body class="container">
+
+  <div class="page-header">
+    <h1>Merchandise
+      <div style="float: right; cursor: pointer;">
+        <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
+      </div>
+    </h1>
+  </div>
+
+  <div class="col-md-3 text-center">
+    <h3>T-Shirt</h3>
+    <img src="images/merchandise/shirt.png" >
+    <br>
+    <strong>$15.89</strong>
+    <br>
+    <button class="btn btn-danger my-cart-btn" data-id="1" data-name="T-Shirt" data-summary="summary 1" data-price="15.89" data-quantity="1" data-image="images/merchandise/shirt.png">Add to Cart</button>
+    <a href="../CapstoneProject/html/shirt.html" target="_blank" class="btn btn-info">Details</a>
+  </div>
+
+  <div class="col-md-3 text-center">
+    <h3>Sweats</h3>
+    <img src="images/merchandise/pants.png" >
+    <br>
+    <strong>$21.65</strong>
+    <br>
+    <button class="btn btn-danger my-cart-btn" data-id="2" data-name="Sweats" data-summary="summary 2" data-price="21.65" data-quantity="1" data-image="images/merchandise/pants.png">Add to Cart</button>
+    <a href="../CapstoneProject/html/pants.html" target="_blank" class="btn btn-info">Details</a>
+  </div>
+
+     <div class="col-md-3 text-center" class="birimbau" >
+       <h3>Atabaque</h3>
+      <img src="images/merchandise/drum.png" >
+      <br>
+      <strong>$387.72</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="3" data-name="Atabaque" data-summary="summary 3" data-price="387.72" data-quantity="1" data-image="images/merchandise/drum.png">Add to Cart</button>
+      <a href="../CapstoneProject/html/drum.html" target="_blank" class="btn btn-info">Details</a>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <h3>Birimbau</h3>
+      <img src="images/merchandise/birimbau.png" >
+      <br>
+      <strong>$78.98</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="4" data-name="Birimbau" data-summary="summary 4" data-price="78.98" data-quantity="1" data-image="images/merchandise/birimbau.png">Add to Cart</button>
+      <a href="../CapstoneProject/html/birimbau.html" target="_blank" class="btn btn-info">Details</a>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <h3>Pandeiro</h3>
+      <img src="images/merchandise/pandeiro.png" >
+      <br>
+    <strong>$26.87</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="5" data-name="Atabaque" data-summary="summary 5" data-price="26.87" data-quantity="1" data-image="images/merchandise/pandeiro.png">Add to Cart</button>
+      <a href="../CapstoneProject/html/pandeiro.html" target="_blank" class="btn btn-info">Details</a>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <h3>Agogo</h3>
+      <img src="images/merchandise/agogo.png" >
+      <br>
+      <strong>$19.54</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="6" data-name="Agogo" data-summary="summary 6" data-price="19.54" data-quantity="1" data-image="images/merchandise/agogo.png">Add to Cart</button>
+      <a href="../CapstoneProject/html/agogo.html" target="_blank" class="btn btn-info">Details</a>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <h3>Capoeira 100</h3>
+      <img src="images/merchandise/book1.jpg" >
+      <br>
+     <strong>$21.33</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="7" data-name="Capoeira 100" data-summary="summary 7" data-price="21.33" data-quantity="1" data-image="images/merchandise/book1.jpg">Add to Cart</button>
+      <a href="../CapstoneProject/html/book1.html" target="_blank" class="btn btn-info">Details</a>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <h3>Capoeira Conditioning</h3>
+      <img src="images/merchandise/book2.jpg" >
+      <br>
+      <strong>$17.23</strong>
+      <br>
+      <button class="btn btn-danger my-cart-btn" data-id="8" data-name="Capoeira Conditioning" data-summary="summary 8" data-price="17.23" data-quantity="1" data-image="images/merchandise/book2.jpg">Add to Cart</button>
+      <a href="../CapstoneProject/html/book2.html" target="_blank" class="btn btn-info">Details</a>
+    </div>
+
+  </div>
+
+
+  <script src="js/jquery-2.2.3.min.js"></script>
+  <script type='text/javascript' src="js/bootstrap.min.js"></script>
+  <script type='text/javascript' src="js/jquery.mycart.js"></script>
+  <script type="text/javascript">
+  $(function () {
+
+    var goToCartIcon = function($addTocartBtn){
+      var $cartIcon = $(".my-cart-icon");
+      var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+      $addTocartBtn.prepend($image);
+      var position = $cartIcon.position();
+      $image.animate({
+        top: position.top,
+        left: position.left
+      }, 500 , "linear", function() {
+        $image.remove();
+      });
+    }
+
+    $('.my-cart-btn').myCart({
+      currencySymbol: '$',
+      classCartIcon: 'my-cart-icon',
+      classCartBadge: 'my-cart-badge',
+      classProductQuantity: 'my-product-quantity',
+      classProductRemove: 'my-product-remove',
+      classCheckoutCart: 'my-cart-checkout',
+      affixCartIcon: true,
+      showCheckoutModal: true,
+      numberOfDecimals: 2,
+      cartItems: [     
+      ],
+      clickOnAddToCart: function($addTocart){
+        goToCartIcon($addTocart);
+      },
+      afterAddOnCart: function(products, totalPrice, totalQuantity) {
+        console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+      },
+      clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+        console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+      },
+      checkoutCart: function(products, totalPrice, totalQuantity) {
+        var checkoutString = "You have been charged " + totalPrice;
+       
+        alert(checkoutString)
+        console.log("checking out", products, totalPrice, totalQuantity);
+      },
+     
+    });
+
+   
+  });
+  </script>
+
+</body>
+
+</html>

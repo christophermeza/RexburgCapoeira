@@ -1,0 +1,845 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+/**page size**/
+#content0 {
+  max-width: 1400px;
+}
+
+
+
+/**header**/
+.rightcol {
+  display: initial;
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  right: 0px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  float: left;
+}
+
+.socialmedia {
+  float: right;
+  padding-right: 20px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+/**navbar**/
+nav {
+  font-family: 'Lustria', serif;
+  color: #f1f1f1;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0 !important;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a,
+.dropdown-btn {
+  font-family: "Open";
+  color: #f1f1f1;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  outline: none;
+}
+
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: gray;
+}
+
+.active {
+  background-color: green;
+  color: blue;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Dropdown container (hidden by default). 
+Optional: add a lighter background color and 
+some left padding to change the design of the 
+dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 20px;
+}
+
+.dropdown-container a {
+  font-family: 'Open Sans', sans-serif;
+  color: yellow;
+  font-size: 30px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
+
+nav span {
+  top: 0px;
+  font-family: "Lato", sans-serif;
+  position: fixed;
+  font-size: 30px;
+  cursor: pointer;
+  background: transparent;
+  padding: 27.7px;
+  width: 50%;
+
+}
+
+
+
+/**paragraph font**/
+p {
+  font-size: 26px;
+}
+
+
+
+/**video on homepage**/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: relative;
+  top: 700px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+/**footer**/
+footer {
+  position: relative;
+  top: 700px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.leftcol {
+  color: white;
+  height: 90px;
+  margin-bottom: -50px;
+}
+
+#info {
+  font-size: 18px;
+  float: left;
+}
+
+
+/**eddie page**/
+#staff {
+  background-color: lightblue;
+}
+
+#eddie img {
+  position: relative;
+  top: 250px;
+  left: 500px;
+  transform: rotate(345deg);
+  max-height: 450px;
+  max-width: auto;
+}
+
+.content2 h1 {
+  font-family: 'Lustria', serif;
+  position: relative;
+  font-size: 60px;
+  bottom: 240px;
+  left: 900px;
+  max-width: 72%;
+}
+
+.content2 h2 {
+  position: relative;
+  font-size: 18px;
+  bottom: 295px;
+  left: 900px;
+  max-width: 72%;
+}
+
+.content2 p {
+  position: relative;
+  bottom: 275px;
+  left: 900px;
+  max-width: 40%;
+}
+
+/**staff, workshops footer**/
+.contentf {
+  position: fixed;
+  top: 910px;
+  height: 100px;
+}
+
+.contentf p {
+  font-size: 18px;
+  padding: 25px 20px;
+}
+
+/**Christie page**/
+#staff {
+  background-color: lightblue;
+}
+
+/**staff-image**/
+#christie img {
+  position: relative;
+  top: 250px;
+  left: 500px;
+}
+
+/**h1, p**/
+.content3 h1 {
+  font-family: 'Lustria', serif;
+  position: relative;
+  font-size: 60px;
+  bottom: 240px;
+  left: 895px;
+  max-width: 72%;
+}
+
+.content3 h2 {
+  position: relative;
+  font-size: 18px;
+  bottom: 295px;
+  left: 900px;
+  max-width: 72%;
+}
+
+.content3 p {
+  position: relative;
+  bottom: 275px;
+  left: 895px;
+  max-width: 40%;
+}
+
+/**workshop*/
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  position: relative;
+  top: 150px;
+  left: 250px;
+  border: 1px solid black;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 40px;
+  border: 1px solid black;
+}
+
+.column img {
+  width: 100%;
+}
+
+.content4 p,
+.content4 h1 {
+  position: relative;
+  top: 100px;
+  padding-left: 20px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  font-weight: bold;
+}
+
+
+
+/**merchandise*/
+
+.market {
+  position: absolute;
+  top: 400px;
+  left: 50px;
+  width: 1800px;
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.market_category {
+  text-align: center;
+  text-decoration-line: underline;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+
+/**shirt*/
+
+
+
+.market_category2 {
+  position: relative;
+  top: 200px;
+  left: 400px;
+  columns: 2;
+  text-align: left;
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.market_item3 img {
+  width: 500px;
+  height: auto;
+}
+
+.market_item4 img {
+  width: 300px;
+  height: auto;
+}
+
+.market_item5 img {
+  width: 300px;
+  height: auto;
+}
+
+.content5 {
+  position: relative;
+  top: 40px;
+}
+
+.content5 h2,
+.content5 p {
+  padding-top: 10px;
+}
+
+.content5 p {
+  font-size: 22px;
+}
+
+
+/**button**/
+.button {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: blue;
+  color: white;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+  border: 10px dotted #4CAF50;
+}
+
+
+
+/**cords**/
+.scroll {
+  width: 1920px;
+  height: 510px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.lightgreen1,
+.darkgreen2,
+.yellow7,
+.lightblue10,
+.darkblue11,
+.white17,
+.lightgreen3,
+.yellow3,
+.darkgreen4,
+.yellow4,
+.lightgreen5,
+.darkblue5,
+.darkgreen6,
+.darkblue6,
+.yellow8,
+.lightblue8,
+.yellow9,
+.darkblue9,
+.darkgreen12,
+.yellow12,
+.darkblue12,
+.darkgreen13,
+.yellow13,
+.darkblue13,
+.white13,
+.white14,
+.darkgreen14,
+.white15,
+.yellow15,
+.white16,
+.darkblue16 {
+  position: relative;
+  margin-left: 20em;
+  width: 39em;
+}
+
+.lightgreen1,
+.darkgreen2,
+.yellow7,
+.lightblue10,
+.darkblue11,
+.white17 {
+  border: 3px solid #000000;
+  height: 6em;
+}
+
+.lightgreen3,
+.yellow3,
+.darkgreen4,
+.yellow4,
+.lightgreen5,
+.darkblue5,
+.darkgreen6,
+.darkblue6,
+.yellow8,
+.lightblue8,
+.yellow9,
+.darkblue9,
+.darkgreen12,
+.yellow12,
+.darkblue12,
+.darkgreen13,
+.yellow13,
+.darkblue13,
+.white13,
+.white14,
+.darkgreen14,
+.white15,
+.yellow15,
+.white16,
+.darkblue16 {
+  border-left: 3px solid #000000;
+  border-right: 3px solid #000000;
+  height: 3em;
+}
+
+.darkgreen12,
+.yellow12,
+.darkblue12 {
+  height: 2em;
+}
+
+.darkgreen13,
+.yellow13,
+.darkblue13,
+.white13 {
+  height: 1.5em;
+}
+
+.lightgreen3,
+.darkgreen4,
+.lightgreen5,
+.darkgreen6,
+.yellow8,
+.yellow9,
+.darkgreen12,
+.darkgreen13,
+.white14,
+.white15,
+.white16 {
+  border-top: 3px solid #000000;
+}
+
+.yellow3,
+.yellow4,
+.darkblue5,
+.darkblue6,
+.lightblue8,
+.darkblue9,
+.darkblue12,
+.white13,
+.darkgreen14,
+.yellow15,
+.darkblue16 {
+  border-bottom: 3px solid #000000;
+}
+
+.lightgreen1,
+.lightgreen3,
+.lightgreen5 {
+  background-color: #90ee90;
+}
+
+.darkgreen2,
+.darkgreen4,
+.darkgreen6,
+.darkgreen12,
+.darkgreen13,
+.darkgreen14 {
+  background-color: #228b22;
+}
+
+.yellow3,
+.yellow4,
+.yellow7,
+.yellow8,
+.yellow9,
+.yellow12,
+.yellow13,
+.yellow15 {
+  background-color: #ffff00;
+}
+
+.darkblue5,
+.darkblue6,
+.darkblue9,
+.darkblue11,
+.darkblue12,
+.darkblue13,
+.darkblue16 {
+  background-color: #0000cd;
+}
+
+.lightblue8,
+.lightblue10 {
+  background-color: #87cefa;
+}
+
+.white13,
+.white14,
+.white15,
+.white16,
+.white17 {
+  background-color: #ffffff;
+}
+
+.cord1 p,
+.cord2 p,
+.cord3 p,
+.cord4 p,
+.cord5 p,
+.cord6 p,
+.cord7 p,
+.cord8 p,
+.cord9 p,
+.cord10 p,
+.cord11 p,
+.cord12 p,
+.cord13 p,
+.cord14 p,
+.cord15 p,
+.cord16 p,
+.cord17 p {
+  font-size: 36px;
+  position: relative;
+  left: 32em;
+}
+
+
+/** light green**/
+.lightgreen1 {
+  top: 7em;
+}
+
+.cord1 p {
+  top: 0em;
+}
+
+/** dark green**/
+.darkgreen2 {
+  top: 0em;
+}
+
+.cord2 p {
+  top: -3em;
+}
+
+/** light green yellow**/
+.lightgreen3 {
+  top: -7em;
+}
+
+.yellow3 {
+  top: -7em;
+}
+
+.cord3 p {
+  top: -6.3em;
+}
+
+/** dark green yellow**/
+.darkgreen4 {
+  top: -14em;
+}
+
+.yellow4 {
+  top: -14em;
+}
+
+.cord4 p {
+  top: -9.6em;
+}
+
+/** light green dark blue**/
+.lightgreen5 {
+  top: -21em;
+}
+
+.darkblue5 {
+  top: -21em;
+}
+
+.cord5 p {
+  top: -12.9em;
+}
+
+/** dark green dark blue**/
+.darkgreen6 {
+  top: -28em;
+}
+
+.darkblue6 {
+  top: -28em;
+}
+
+.cord6 p {
+  top: -16.2em;
+}
+
+/** yellow**/
+.yellow7 {
+  top: -35em;
+}
+
+.cord7 p {
+  top: -19.5em;
+}
+
+/** yellow light blue**/
+.yellow8 {
+  top: -42em;
+}
+
+.lightblue8 {
+  top: -42em;
+}
+
+.cord8 p {
+  top: -22.8em;
+}
+
+/** yellow dark blue**/
+.yellow9 {
+  top: -49em;
+}
+
+.darkblue9 {
+  top: -49em;
+}
+
+.cord9 p {
+  top: -26.1em;
+}
+
+/** light blue**/
+.lightblue10 {
+  top: -56em;
+}
+
+.cord10 p {
+  top: -29.4em;
+}
+
+/** dark blue**/
+.darkblue11 {
+  top: -63em;
+}
+
+.cord11 p {
+  top: -32.7em;
+}
+
+/** dark green yellow dark blue**/
+.darkgreen12 {
+  top: -70em;
+}
+
+.yellow12 {
+  top: -70em;
+}
+
+.darkblue12 {
+  top: -70em;
+}
+
+.cord12 p {
+  top: -36em;
+}
+
+/** dark green yellow dark blue white**/
+.darkgreen13 {
+  top: -77em;
+}
+
+.yellow13 {
+  top: -77em;
+}
+
+.darkblue13 {
+  top: -77em;
+}
+
+.white13 {
+  top: -77em;
+}
+
+.cord13 p {
+  top: -39.3em;
+}
+
+/** white dark green**/
+.white14 {
+  top: -84em;
+}
+
+.darkgreen14 {
+  top: -84em;
+}
+
+.cord14 p {
+  top: -42.6em;
+}
+
+/** white yellow**/
+.white15 {
+  top: -91em;
+}
+
+.yellow15 {
+  top: -91em;
+}
+
+.cord15 p {
+  top: -45.9em;
+}
+
+/** white dark blue**/
+.white16 {
+  top: -98em;
+}
+
+.darkblue16 {
+  top: -98em;
+}
+
+.cord16 p {
+  top: -49.2em;
+}
+
+/** white**/
+.white17 {
+  top: -105em;
+}
+
+.cord17 p {
+  top: -52.5em;
+}
+
+
+
+/**calendar**/
+iframe {
+  margin-left: 30em;
+  width: 700px;
+  height: 500px;
+}
